@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HIKER - Home</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/styles.css">
+    <!-- Add Swiper.js for testimonials slider -->
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+</head>
+<body class="bg-white text-gray-900">
+
+    <!-- Navbar -->
+    <header class="fixed top-0 left-0 w-full bg-transparent backdrop-blur-lg z-50">
+        <div class="container mx-auto flex justify-between items-center p-4">
+            <!-- Logo -->
+            <h1 class="text-6xl font-bold text-red-600">HIKER</h1>
+    
+            <!-- Navbar Menu -->
+            <div class="block lg:hidden">
+                <!-- Hamburger Button -->
+                <button id="hamburger-button" class="text-white focus:outline-none">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" class="w-8 h-8">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+                    </svg>
+                </button>
+            </div>
+    
+            <!-- Navigation Links (Visible on larger screens) -->
+            <nav class="hidden lg:block text-2xl">
+                <ul class="flex space-x-8">
+                    <li><a href="index.html" class="text-white hover:text-red-600">Home</a></li>
+                    <li><a href="men.html" class="text-white hover:text-red-600">Men</a></li>
+                    <li><a href="women.html" class="text-white hover:text-red-600">Women</a></li>
+                    <li><a href="about.html" class="text-white hover:text-red-600">About</a></li>
+                    <li><a href="contact.html" class="text-white hover:text-red-600">Contact</a></li>
+                </ul>
+            </nav>
+    
+            <!-- Mobile Menu -->
+            <div id="mobile-menu" class="lg:hidden absolute top-16 left-0 w-full bg-white shadow-md hidden">
+                <ul class="flex flex-col items-center space-y-4 py-4">
+                    <li><a href="index.html" class="text-gray-800 hover:text-red-600">Home</a></li>
+                    <li><a href="men.html" class="text-gray-800 hover:text-red-600">Men</a></li>
+                    <li><a href="women.html" class="text-gray-800 hover:text-red-600">Women</a></li>
+                    <li><a href="about.html" class="text-gray-800 hover:text-red-600">About</a></li>
+                    <li><a href="contact.html" class="text-gray-800 hover:text-red-600">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="relative h-screen">
+        <video autoplay muted loop class="absolute w-full h-full object-cover">
+            <source src="video for website.mp4" type="video/mp4">
+        </video>
+        <div class="absolute inset-0 bg-black opacity-30"></div>
+        <div class="relative z-10 flex flex-col items-center justify-center h-full">
+            <h2 class="text-white text-4xl md:text-6xl font-bold italic">WELCOME TO HIKER</h2>
+            <p class="text-white py-8 text-2xl italic">" Where passion meets fashion "</p>
+        </div>
+    </section>
+
+    <!-- Men’s Section Link -->
+    <section id="men" class="w-full py-20">
+        <a href="mens-shoes.html">
+            <div class="relative group">
+                <img src="mens-section.jpg" alt="Men's Shoes" class="w-full">
+                <div class="absolute inset-0 bg-red-600 opacity-0 group-hover:opacity-50 transition duration-500"></div>
+                <h3 class="absolute inset-0 flex items-center justify-center text-white text-3xl font-bold opacity-0 group-hover:opacity-100 transition duration-500">Explore Men's Shoes</h3>
+            </div>
+        </a>
+    </section>
+
+    <!-- Women’s Section Link -->
+    <section id="women" class="w-full py-20">
+        <a href="womens-shoes.html">
+            <div class="relative group">
+                <img src="women-section.jpg" alt="Women's Shoes" class="w-full">
+                <div class="absolute inset-0 bg-red-600 opacity-0 group-hover:opacity-50 transition duration-500"></div>
+                <h3 class="absolute inset-0 flex items-center justify-center text-white text-3xl font-bold opacity-0 group-hover:opacity-100 transition duration-500">Explore Women's Shoes</h3>
+            </div>
+        </a>
+    </section>
+
+    <!-- Testimonials Slider Section -->
+    <section id="testimonials" class="w-full py-20 bg-red-700">
+        <div class="container mx-auto text-center">
+            <h2 class="text-3xl font-bold mb-6 text-white">What Our Customers Say</h2>
+
+            <!-- Swiper Slider -->
+            <div class="swiper-container">
+                <div class="swiper-wrapper flex">
+                    <!-- Slide 1 -->
+                    <div class="swiper-slide p-6 bg-white shadow-lg rounded-lg mx-4">
+                        <p class="text-lg italic mb-4">"I absolutely love my HIKER shoes! They are comfortable and stylish. I wear them everywhere!"</p>
+                        <p class="font-bold text-lg">John Doe</p>
+                    </div>
+                    <!-- Slide 2 -->
+                    <div class="swiper-slide p-6 bg-white shadow-lg rounded-lg mx-4">
+                        <p class="text-lg italic mb-4">"HIKER shoes are the best I’ve ever bought. The quality is amazing, and they fit perfectly!"</p>
+                        <p class="font-bold text-lg">Jane Smith</p>
+                    </div>
+                    <!-- Slide 3 -->
+                    <div class="swiper-slide p-6 bg-white shadow-lg rounded-lg mx-4">
+                        <p class="text-lg italic mb-4">"These shoes are not only durable but also very fashionable. Totally worth the investment!"</p>
+                        <p class="font-bold text-lg">Michael Brown</p>
+                    </div>
+                    <!-- Add more slides as needed -->
+                </div>
+                <!-- Add Pagination -->
+                <div class="swiper-pagination"></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer Section -->
+    <footer class="bg-gray-800 text-white py-10">
+        <div class="container mx-auto text-center">
+            <p class="text-lg font-semibold">HIKER</p>
+            <p class="text-sm">Your go-to brand for stylish and comfortable shoes. All rights reserved.</p>
+            <p class="text-sm">© 2024 HIKER</p>
+        </div>
+    </footer>
+
+    <!-- Include Swiper.js -->
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script>
+        // Get the elements
+    const hamburgerButton = document.getElementById("hamburger-button");
+    const mobileMenu = document.getElementById("mobile-menu");
+
+    // Toggle mobile menu visibility
+    hamburgerButton.addEventListener("click", () => {
+        mobileMenu.classList.toggle("hidden");
+    });
+        // Initialize Swiper for testimonials
+        var swiper = new Swiper('.swiper-container', {
+            loop: true,
+            slidesPerView: 1,
+            spaceBetween: 10,
+            pagination: {
+                el: '.swiper-pagination',
+                clickable: true,
+            },
+            breakpoints: {
+                640: {
+                    slidesPerView: 2,
+                },
+                1024: {
+                    slidesPerView: 3,
+                },
+            },
+        });
+    </script>
+
+    <script src="script.js"></script>
+</body>
+</html>

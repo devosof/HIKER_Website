@@ -1,0 +1,56 @@
+/* styles.css */
+
+/* Smooth scroll behavior */
+html {
+    scroll-behavior: smooth;
+  }
+  
+  /* Image hover effect */
+  .group:hover .group-hover\:opacity-50 {
+    opacity: 0.5;
+  }
+  
+  .group:hover .group-hover\:opacity-100 {
+    opacity: 1;
+  }
+  
+  /* Navbar blur effect */
+  .backdrop-blur-lg {
+    backdrop-filter: blur(10px);
+  }
+  
+  /* Custom button animation */
+  button:hover {
+    transform: scale(1.05);
+    transition: transform 0.3s ease;
+  }
+  
+  /* Navbar Styles */
+header {
+  position: fixed;
+  width: 100%;
+  z-index: 1000;
+}
+
+/* Hero Video */
+section.relative .video {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* Testimonials Slider */
+.testimonials-slider {
+  display: flex;
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+}
+.testimonial-card {
+  scroll-snap-align: center;
+  min-width: 300px;
+  margin-right: 10px;
+  transition: transform 0.3s ease;
+}
+.testimonial-card:hover {
+  transform: scale(1.05);
+}

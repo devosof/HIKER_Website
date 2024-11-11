@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HIKER - Men's Shoes</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body class="bg-white text-gray-900">
+    <!-- Navbar -->
+    <header class="fixed top-0 left-0 w-full bg-transparent bg-black backdrop-blur-lg z-50">
+        <div class="container mx-auto flex justify-between items-center p-4">
+            <!-- Logo -->
+            <h1 class="text-6xl font-bold text-red-600">HIKER</h1>
+    
+            <!-- Navbar Menu -->
+            <div class="block lg:hidden">
+                <!-- Hamburger Button -->
+                <button id="hamburger-button" class="text-white focus:outline-none">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" class="w-8 h-8">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+                    </svg>
+                </button>
+            </div>
+    
+            <!-- Navigation Links (Visible on larger screens) -->
+            <nav class="hidden lg:block text-2xl">
+                <ul class="flex space-x-8">
+                    <li><a href="index.html" class="text-white hover:text-red-600">Home</a></li>
+                    <li><a href="men.html" class="text-white hover:text-red-600">Men</a></li>
+                    <li><a href="women.html" class="text-white hover:text-red-600">Women</a></li>
+                    <li><a href="about.html" class="text-white hover:text-red-600">About</a></li>
+                    <li><a href="contact.html" class="text-white hover:text-red-600">Contact</a></li>
+                </ul>
+            </nav>
+    
+            <!-- Mobile Menu -->
+            <div id="mobile-menu" class="lg:hidden absolute top-16 left-0 w-full bg-white shadow-md hidden">
+                <ul class="flex flex-col items-center space-y-4 py-4">
+                    <li><a href="index.html" class="text-gray-800 hover:text-red-600">Home</a></li>
+                    <li><a href="men.html" class="text-gray-800 hover:text-red-600">Men</a></li>
+                    <li><a href="women.html" class="text-gray-800 hover:text-red-600">Women</a></li>
+                    <li><a href="about.html" class="text-gray-800 hover:text-red-600">About</a></li>
+                    <li><a href="contact.html" class="text-gray-800 hover:text-red-600">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+    </header>
+
+    <!-- Men's Shoes Heading -->
+    <section class="container mx-auto py-10 mt-5 text-center">
+        <h2 class="text-6xl font-bold text-red-600 my-20 ">Men's Shoes</h2>
+        <p class="text-gray-700 text-2xl italic font-mono font-bold">Explore our range of stylish and comfortable men’s shoes for every occasion.</p>
+    </section>
+
+    <!-- Product Grid -->
+    <section class="product-grid container mx-auto py-5 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+        <!-- Product Card -->
+        <a href="product-page.html?id=1" class="block product-card hover:shadow-lg transition transform hover:scale-105">
+            <img src="WhatsApp Image 2024-11-10 at 18.49.38_24130cb9.jpg" alt="Men's Shoe 1" class="w-full h-64 object-cover rounded-lg">
+            <div class="p-4">
+                <h3 class="text-xl font-bold text-gray-800">Men's Casual Shoe</h3>
+                <p class="text-red-600 text-lg">$79.99</p>
+            </div>
+        </a>
+        <!-- Add more product cards as needed following the same format -->
+    </section>
+</body>
+<script>
+    const menShoes = [
+        {
+            id: 1,
+            name: "Men's Casual Shoe",
+            price: 79.99,
+            image: "WhatsApp Image 2024-11-10 at 18.49.38_213381fb.jpg",
+            link: "product-page.html?id=1"
+        },
+        {
+            id: 2,
+            name: "Men's Running Shoe",
+            price: 89.99,
+            image: "WhatsApp Image 2024-11-10 at 18.49.38_889d75ce.jpg",
+            link: "product-page.html?id=2"
+        },
+        {
+            id: 2,
+            name: "Men's Running Shoe",
+            price: 89.99,
+            image: "WhatsApp Image 2024-11-10 at 18.49.38_889d75ce.jpg",
+            link: "product-page.html?id=2"
+        },
+        {
+            id: 2,
+            name: "Men's Running Shoe",
+            price: 89.99,
+            image: "WhatsApp Image 2024-11-10 at 18.49.38_889d75ce.jpg",
+            link: "product-page.html?id=2"
+        },
+        {
+            id: 2,
+            name: "Men's Running Shoe",
+            price: 89.99,
+            image: "WhatsApp Image 2024-11-10 at 18.49.38_889d75ce.jpg",
+            link: "product-page.html?id=2"
+        },
+        {
+            id: 2,
+            name: "Men's Running Shoe",
+            price: 89.99,
+            image: "WhatsApp Image 2024-11-10 at 18.49.38_889d75ce.jpg",
+            link: "product-page.html?id=2"
+        },
+        {
+            id: 2,
+            name: "Men's Running Shoe",
+            price: 89.99,
+            image: "WhatsApp Image 2024-11-10 at 18.49.38_889d75ce.jpg",
+            link: "product-page.html?id=2"
+        },
+        {
+            id: 2,
+            name: "Men's Running Shoe",
+            price: 89.99,
+            image: "WhatsApp Image 2024-11-10 at 18.49.38_889d75ce.jpg",
+            link: "product-page.html?id=2"
+        },
+        // Add more men’s shoes here
+    ];
+
+    const productContainer = document.querySelector('.product-grid');  // The grid where the products will be inserted
+
+    menShoes.forEach(shoe => {
+        const productCard = document.createElement('a');
+        productCard.href = shoe.link;  // Dynamic link to the product page
+        productCard.classList.add('block', 'product-card', 'hover:shadow-lg', 'transition', 'transform', 'hover:scale-105');
+
+        const productImage = document.createElement('img');
+        productImage.src = shoe.image;
+        productImage.alt = shoe.name;
+        productImage.classList.add('w-full', 'h-64', 'object-cover', 'rounded-lg');
+
+        const productInfo = document.createElement('div');
+        productInfo.classList.add('p-4');
+
+        const productTitle = document.createElement('h3');
+        productTitle.classList.add('text-xl', 'font-bold', 'text-gray-800');
+        productTitle.textContent = shoe.name;
+
+        const productPrice = document.createElement('p');
+        productPrice.classList.add('text-red-600', 'text-lg');
+        productPrice.textContent = `$${shoe.price}`;
+
+        productInfo.appendChild(productTitle);
+        productInfo.appendChild(productPrice);
+
+        productCard.appendChild(productImage);
+        productCard.appendChild(productInfo);
+
+        productContainer.appendChild(productCard);  // Append product card to the container
+    });
+</script>
+
+</html>
